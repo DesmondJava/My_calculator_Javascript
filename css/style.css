@@ -1,0 +1,44 @@
+/*Basic*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font: bold 14px Arial, sans-serif;
+}
+
+#calculator {
+    width: 325px;
+    height: auto;
+
+    margin: 100px auto;
+    padding: 20px 20px 9px;
+
+    background: linear-gradient(#FF0000, #CC0000);
+    border-radius: 10px;
+}
+
+.buttons{
+    overflow: hidden;
+}
+
+.buttons span{
+    float: left;
+
+    width: 66px;
+    height: 40px;
+
+    background: white;
+    border-radius: 3px;
+
+    margin: 0 7px 11px 0;
+
+    line-height: 40px;
+    text-align: center;
+
+    color: black;
+}
+
+span.operators{
+    margin-right: 0px;
+}
