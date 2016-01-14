@@ -7,8 +7,30 @@
     font: bold 14px Arial, sans-serif;
 }
 
+html {
+    background-image: url("http://supernovathemes.com/wp-content/themes/supernonvathemes/images/bg/b38.png");
+
+}
+
+
+/* Top portion */
+.top span.clear {
+    float: left;
+}
+
+.top .screen{
+    height: 43px;
+    width: 202px;
+    float:right;
+    margin: 0px 10px 10px 10px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
+
+}
+
 #calculator {
-    width: 325px;
+    width: 340px;
     height: auto;
 
     margin: 100px auto;
@@ -16,29 +38,78 @@
 
     background: linear-gradient(#FF0000, #CC0000);
     border-radius: 10px;
+    box-shadow: 5px 6px rgb(112,0,0);
 }
 
-.buttons{
+.buttons, .top{
     overflow: hidden;
 }
 
-.buttons span{
+.buttons span, .top span.clear {
     float: left;
 
+    position: relative;
+    top:0;
+
+    cursor: pointer;
     width: 66px;
     height: 40px;
 
     background: white;
     border-radius: 3px;
 
-    margin: 0 7px 11px 0;
+    margin: 0 10px 11px 0;
 
     line-height: 40px;
     text-align: center;
 
     color: black;
+    box-shadow: 5px 6px rgb(112,0,0);
+    user-select: none;
+
+    transition: all 0.2s ease;
 }
 
 span.operators{
     margin-right: 0px;
+}
+
+.buttons span.operators {
+    background: #FFCC00;
+    margin-right: 0;
+}
+
+.buttons span.evaluate {
+    background: #6666FF;
+}
+
+.top span.clear {
+    background: #33FF00;
+}
+
+/*Hover effects*/
+.buttons span:hover {
+    background: #9c89f6;
+    color: white;
+}
+
+.buttons span.evaluate:hover {
+    background: orangered;
+    color: white;
+}
+
+/* Simulating "pressed" effect on click */
+.buttons span:active {
+    color: white;
+    top: 4px;
+}
+
+.buttons span.evaluate:active {
+    background: orangered;
+    top: 4px;
+}
+
+.top span.clear:active {
+    background: #33FF00;
+    top: 4px;
 }
