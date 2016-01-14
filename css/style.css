@@ -26,6 +26,14 @@ html {
     background: rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
+    padding: 0 15px;
+
+    text-align: right;
+    font-size: 16px;
+    line-height: 45px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
 
 }
 
@@ -68,6 +76,13 @@ html {
     user-select: none;
 
     transition: all 0.2s ease;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 span.operators{
@@ -98,18 +113,25 @@ span.operators{
     color: white;
 }
 
+.top span.clear:hover {
+    color: white;
+}
+
 /* Simulating "pressed" effect on click */
 .buttons span:active {
     color: white;
     top: 4px;
+    box-shadow: none;
 }
 
 .buttons span.evaluate:active {
     background: orangered;
     top: 4px;
+    box-shadow: none;
 }
 
 .top span.clear:active {
     background: #33FF00;
     top: 4px;
+    box-shadow: none;
 }
